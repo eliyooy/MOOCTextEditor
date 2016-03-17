@@ -109,14 +109,18 @@ public class BasicDocument extends Document
 		String[] wordSplit = hello.split("[^aeiouy]+");
 		System.out.println(Arrays.toString(wordSplit));
 
-		BasicDocument testDoc = new BasicDocument("");
-		int result = testDoc.countSyllables("segue");
+		BasicDocument testDoc = new BasicDocument("There is a considerable amount of debate about the issue.");
+		//int result = testDoc.countSyllables("segue");
 		if(hello.endsWith("e") && hello.charAt(hello.length() - 2) != 'u') {
 			System.out.println("You're in the block");
 		} else {
 			System.out.println("You skipped the block");
 		}
-		System.out.println(result);
+		//System.out.println(result);
+
+		// *** Testing Flesch Score ***
+		System.out.println(testDoc.getFleschScore());
+
 
 
 		// *** Remaining Tests ***
