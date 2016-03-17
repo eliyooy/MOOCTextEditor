@@ -171,7 +171,13 @@ public abstract class Document {
 	    // TODO: Implement this method
 		double fleschScore;
 
-		fleschScore = 206.835 - (1.015*(getNumWords() / getNumSentences())) - (84.6*(getNumSyllables()/getNumWords()));
+		int syllables = getNumSyllables();
+		int words = getNumWords();
+		int sentences = getNumSentences();
+		double wordsDiv = (double) words / (double) sentences * 1.015d;
+		double syllDiv = (double) syllables / (double) words * 84.6d;
+
+		fleschScore = 206.835 - wordsDiv - syllDiv;
 
 	    return fleschScore;
 	}

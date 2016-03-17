@@ -100,23 +100,25 @@ public class BasicDocument extends Document
 				+ "Senteeeeeeeeeences are here... there should be 5!  Right?");
 
 		// *** Testing the first sentence ***
-		String text1 = test1.getText();
-		String[] text1a = text1.split("[ ,.?!0-9():]+");
-		System.out.println(Arrays.toString(text1a));
+//		String text1 = test1.getText();
+//		String[] text1a = text1.split("[ ,.?!0-9():]+");
+//		System.out.println(Arrays.toString(text1a));
 
 		// *** Testing individual words ***
-		String hello = "segue";
-		String[] wordSplit = hello.split("[^aeiouy]+");
-		System.out.println(Arrays.toString(wordSplit));
+//		String hello = "We are the people.  And the people are us.  We know this to be true.";
+//		String[] wordSplit = hello.split("[^aeiouy]+");
+//		System.out.println(Arrays.toString(wordSplit));
 
-		BasicDocument testDoc = new BasicDocument("There is a considerable amount of debate about the issue.");
-		//int result = testDoc.countSyllables("segue");
-		if(hello.endsWith("e") && hello.charAt(hello.length() - 2) != 'u') {
-			System.out.println("You're in the block");
-		} else {
-			System.out.println("You skipped the block");
-		}
-		//System.out.println(result);
+//		int result = testDoc.countSyllables("segue");
+//		if(hello.endsWith("e") && hello.charAt(hello.length() - 2) != 'u') {
+//			System.out.println("You're in the block");
+//		} else {
+//			System.out.println("You skipped the block");
+//		}
+//		System.out.println(result);
+
+		BasicDocument testDoc = new BasicDocument("There is a time and place for everything.  This is the time and place.");
+		System.out.println(testDoc.getNumSentences() + " " + testDoc.getNumWords() + " " + testDoc.getNumSyllables());
 
 		// *** Testing Flesch Score ***
 		System.out.println(testDoc.getFleschScore());
