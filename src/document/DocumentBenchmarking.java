@@ -34,7 +34,7 @@ public class DocumentBenchmarking {
 		// You can play around with this.
 		int start = 50000;
 
-		System.out.println("NumberOfChars    BasicTime    EfficientTime");
+		System.out.println("NumberOfChars \t BasicTime \t EfficientTime");
 
 		// TODO: Fill in the rest of this method so that it runs two loops
 		// and prints out timing results as described in the assignment 
