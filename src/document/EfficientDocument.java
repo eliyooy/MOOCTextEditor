@@ -14,7 +14,8 @@ public class EfficientDocument extends Document {
 	private int numWords;  // The number of words in the document
 	private int numSentences;  // The number of sentences in the document
 	private int numSyllables;  // The number of syllables in the document
-	
+	private static String currentToken; // Placeholder String to pass through each word in processText
+
 	public EfficientDocument(String text)
 	{
 		super(text);
@@ -42,9 +43,25 @@ public class EfficientDocument extends Document {
 		// Provide this first line in the starter code.  
 		// Words are only strings of letters.  No numbers.
 		List<String> tokens = getTokens("[!?.]+|[a-zA-Z]+");
+
+		int processWords = 0;
+		int processSyllables = 0;
+		int processSentences = 0;
+
 		
 		// TODO: Finish this method.  Remember the countSyllables method from 
 		// Document.  That will come in handy here.
+		for( String token : tokens ) {
+			currentToken = token;
+			processWords += getNumWords();
+			processSyllables += getNumSyllables();
+			processSentences += getNumSentences();
+		}
+
+		this.numWords = processWords;
+		this.numSentences = processSentences;
+		this.numSyllables = processSyllables;
+
 	}
 	
 	
@@ -58,7 +75,11 @@ public class EfficientDocument extends Document {
 	@Override
 	public int getNumWords() {
 		//TODO: write this method.  Hint: It's simple
-	    return 0;
+		if(isWord(currentToken)) {
+			return 1;
+		}
+
+		return 0;
 	}
 
 	/**
@@ -72,7 +93,12 @@ public class EfficientDocument extends Document {
 	@Override
 	public int getNumSentences() {
         //TODO: write this method.  Hint: It's simple
-        return 0;
+
+		if(currentToken.contains("!") || currentToken.contains("?") || currentToken.contains(".")) {
+			return 1;
+		}
+
+		return 0;
 	}
 
 	/**
@@ -86,7 +112,8 @@ public class EfficientDocument extends Document {
 	@Override
 	public int getNumSyllables() {
         //TODO: write this method.  Hint: It's simple
-        return 0;
+
+		return countSyllables(currentToken);
 	}
 	
 	// Can be used for testing
@@ -99,7 +126,7 @@ public class EfficientDocument extends Document {
         testCase(new EfficientDocument(""), 0, 0, 0);
         testCase(new EfficientDocument("sentence, with, lots, of, commas.!  "
                 + "(And some poaren)).  The output is: 7.5."), 15, 11, 4);
-        testCase(new EfficientDocument("many???  Senteeeeeeeeeences are"), 6, 3, 2); 
+        testCase(new EfficientDocument("many???  Senteeeeeeeeeences are"), 6, 3, 2);
         testCase(new EfficientDocument("Here is a series of test sentences. Your program should "
 				+ "find 3 sentences, 33 words, and 49 syllables. Not every word will have "
 				+ "the correct amount of syllables (example, for example), "
