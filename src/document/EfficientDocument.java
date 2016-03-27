@@ -53,12 +53,14 @@ public class EfficientDocument extends Document {
 		// Document.  That will come in handy here.
 		for( String token : tokens ) {
 			currentToken = token;
-			processWords += getNumWords();
-			processSyllables += getNumSyllables();
-			processSentences += getNumSentences();
+			processWords += processWords();
+			processSyllables += processSyllables();
+			processSentences += processSentences();
 		}
 
-		if(tokens.size() == 0) {
+		if(getText() == "") {
+
+		} else if(tokens.size() == 0) {
 			processSentences += 1;
 		} else if(!tokens.get(tokens.size() - 1).contains(".") && !tokens.get(tokens.size() - 1).contains("?") &&
 				!tokens.get(tokens.size() - 1).contains("!")) {
@@ -70,8 +72,7 @@ public class EfficientDocument extends Document {
 		this.numSyllables = processSyllables;
 
 	}
-	
-	
+
 	/**
 	 * Get the number of words in the document.
 	 * "Words" are defined as contiguous strings of alphabetic characters
@@ -82,6 +83,11 @@ public class EfficientDocument extends Document {
 	@Override
 	public int getNumWords() {
 		//TODO: write this method.  Hint: It's simple
+
+		return numWords;
+	}
+
+	public int processWords() {
 		if(isWord(currentToken)) {
 			return 1;
 		}
@@ -101,7 +107,11 @@ public class EfficientDocument extends Document {
 	public int getNumSentences() {
         //TODO: write this method.  Hint: It's simple
 
-		if(currentToken.contains("!") || currentToken.contains("?") || currentToken.contains(".")) {
+		return numSentences;
+	}
+
+	public int processSentences() {
+		if(currentToken.contains("!") || currentToken.contains("?") || currentToken.contains(".")){
 			return 1;
 		}
 
@@ -120,6 +130,10 @@ public class EfficientDocument extends Document {
 	public int getNumSyllables() {
         //TODO: write this method.  Hint: It's simple
 
+		return numSyllables;
+	}
+
+	public int processSyllables() {
 		return countSyllables(currentToken);
 	}
 	
@@ -130,7 +144,7 @@ public class EfficientDocument extends Document {
 	    testCase(new EfficientDocument("This is a test.  How many???  "
                 + "Senteeeeeeeeeences are here... there should be 5!  Right?"),
                 16, 13, 5);
-  //      testCase(new EfficientDocument(""), 0, 0, 0);
+        testCase(new EfficientDocument(""), 0, 0, 0);
         testCase(new EfficientDocument("sentence, with, lots, of, commas.!  "
                 + "(And some poaren)).  The output is: 7.5."), 15, 11, 4);
         testCase(new EfficientDocument("many???  Senteeeeeeeeeences are"), 6, 3, 2);
