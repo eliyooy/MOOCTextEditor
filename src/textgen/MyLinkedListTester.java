@@ -2,7 +2,6 @@
  * 
  */
 package textgen;
-
 import static org.junit.Assert.*;
 
 import java.util.LinkedList;
@@ -115,6 +114,10 @@ public class MyLinkedListTester {
 		assertEquals("Remove: check size is correct ", 2, list1.size());
 		
 		// TODO: Add more tests here
+		shortList.add("C");
+		shortList.remove(2);
+		assertEquals("Check size for removing", shortList.size(), 2);
+		assertEquals("Check int size for new list", emptyList.size(), 0);
 	}
 	
 	/** Test adding an element into the end of the list, specifically
@@ -124,7 +127,8 @@ public class MyLinkedListTester {
 	public void testAddEnd()
 	{
         // TODO: implement this test
-		
+		shortList.add("C");
+		assertEquals("C not properly added to end of list", shortList.get(2), "C");
 	}
 
 	
@@ -133,6 +137,8 @@ public class MyLinkedListTester {
 	public void testSize()
 	{
 		// TODO: implement this test
+		shortList.add("C");
+		assertEquals("Check size for adding", shortList.size(), 3);
 	}
 
 	
@@ -145,7 +151,8 @@ public class MyLinkedListTester {
 	public void testAddAtIndex()
 	{
         // TODO: implement this test
-		
+		longerList.add(3, 55);
+		assertEquals("Check add at index", (Integer)55, longerList.get(3));
 	}
 	
 	/** Test setting an element in the list */
