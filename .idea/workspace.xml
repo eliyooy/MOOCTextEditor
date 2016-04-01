@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69d5d566-678c-4aeb-9123-416400ebcb8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/document/mod2.zip" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/document/mod2.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/textgen/LLNode.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/textgen/LLNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/textgen/MyLinkedList.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/textgen/MyLinkedList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/textgen/MyLinkedListTester.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/textgen/MyLinkedListTester.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/document/mod2.zip" afterPath="$PROJECT_DIR$/src/document/mod2.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/textgen/MyLinkedList.java" afterPath="$PROJECT_DIR$/src/textgen/MyLinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/textgen/MyLinkedListTester.java" afterPath="$PROJECT_DIR$/src/textgen/MyLinkedListTester.java" />
@@ -35,8 +29,8 @@
       <file leaf-file-name="MyLinkedList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/textgen/MyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+            <state relative-caret-position="254">
+              <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -45,11 +39,21 @@
       <file leaf-file-name="MyLinkedListTester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/textgen/MyLinkedListTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="106" column="43" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
+            <state relative-caret-position="2820">
+              <caret line="190" column="9" selection-start-line="190" selection-start-column="9" selection-end-line="190" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyLinkedListGrader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/textgen/MyLinkedListGrader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="87" column="42" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,8 +92,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-91" />
-    <option name="y" value="261" />
+    <option name="x" value="323" />
+    <option name="y" value="24" />
     <option name="width" value="1280" />
     <option name="height" value="703" />
   </component>
@@ -119,6 +123,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,7 +213,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -595,8 +599,8 @@
       <item index="3" class="java.lang.String" itemvalue="Application.MainApp" />
       <item index="4" class="java.lang.String" itemvalue="Application.Efficient Document" />
       <item index="5" class="java.lang.String" itemvalue="Application.Document Benchmarking" />
-      <item index="6" class="java.lang.String" itemvalue="Application.BasicDocument" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.My Linked List Tester" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.My Linked List Tester" />
+      <item index="7" class="java.lang.String" itemvalue="Application.BasicDocument" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -621,34 +625,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 18h 34m 21s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 22h 36m 39s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 18h 36m 13s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 22h 41m 30s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 18h 43m 01s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 23h 14m 56s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 18h 45m 13s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 23h 15m 29s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 18h 47m 04s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 23h 16m 48s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 18h 49m 41s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 23h 17m 16s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 18h 50m 16s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 23h 19m 22s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 18h 50m 35s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 23h 25m 52s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 19h 50m 35s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 23h 26m 09s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 19h 51m 07s.xml">
+    <history-entry file="My_Linked_List_Tester - 2016.03.31 at 23h 26m 37s.xml">
       <configuration name="My Linked List Tester" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -662,7 +666,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-91" y="261" width="1280" height="703" extended-state="0" />
+    <frame x="323" y="24" width="1280" height="703" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -673,7 +677,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1037,22 +1041,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="759" column="0" selection-start-line="759" selection-start-column="0" selection-end-line="759" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/textgen/MyLinkedListGrader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/textgen/MyLinkedListTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="106" column="43" selection-start-line="106" selection-start-column="43" selection-end-line="106" selection-end-column="43" />
+        <state relative-caret-position="2820">
+          <caret line="190" column="9" selection-start-line="190" selection-start-column="9" selection-end-line="190" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1061,8 +1064,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/textgen/MyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+        <state relative-caret-position="254">
+          <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
           <folding />
         </state>
       </provider>

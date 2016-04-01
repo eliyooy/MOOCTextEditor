@@ -83,25 +83,29 @@ public class MyLinkedList<E> extends AbstractList<E> {
 			throw new IndexOutOfBoundsException("Not a valid index for this LinkedList.");
 		}
 
+		if(element == null) {
+			throw new NullPointerException("Null pointers not accepted.");
+		}
+
 		if(index == 0) {
 			head.next = newElement;
 			newElement.prev = head;
-			newElement.next = head.next.next;
-			//newElement.next.prev = newElement;
+			if(size == (index + 1)) {
+				newElement.next = head.next.next;
+				newElement.next.prev = newElement;
+			}
 			size++;
 			return;
 		}
 
 		for(int i=0; i<(index+1); i++) {
 			currentElement = currentElement.next;
-			LLNode<E> placeholderElement = head;
 
 			if(i == index) {
-				placeholderElement.data = currentElement.data;
-				currentElement.data = newElement.data;
-				currentElement.prev = placeholderElement.prev;
-				currentElement.next = placeholderElement;
-				placeholderElement.prev = currentElement;
+				currentElement.prev.next = newElement;
+				currentElement.prev = newElement;
+				newElement.next = currentElement;
+				newElement.prev = currentElement.prev;
 				size++;
 			}
 		}
@@ -128,27 +132,28 @@ public class MyLinkedList<E> extends AbstractList<E> {
 		LLNode<E> currentElement = head;
 		E EValue = head.data;
 
-		if(size == 0 || index < 0 || index > size) {
+		if(size == 0 || index < 0 || index >= size) {
 			throw new IndexOutOfBoundsException("Not a valid index for this LinkedList.");
 		}
 
 		if(index == 0) {
 			EValue = head.next.data;
-			LLNode<E> targetElement = head.next;
-			head.next = targetElement.next;
-			targetElement.next.prev = head;
+			currentElement = head.next;
+			head.next = currentElement.next;
+			if(size > 1) {
+				currentElement.next.prev = currentElement.prev;
+			}
 			size--;
 			return EValue;
 		}
 
 		for(int i=0; i<(index+1); i++) {
 			currentElement = currentElement.next;
-			LLNode<E> previousElement = currentElement.prev;
 
 			if(i == index && index != (size + 1)) {
 				EValue = currentElement.data;
-				//previousElement.next = currentElement.next;
-				currentElement.next.prev = previousElement;
+				currentElement.prev.next = currentElement.next;
+				currentElement.next.prev = currentElement.prev;
 				size--;
 				return EValue;
 			}
@@ -169,8 +174,12 @@ public class MyLinkedList<E> extends AbstractList<E> {
 		LLNode<E> currentElement = head;
 		LLNode<E> newElement = new LLNode<E>(element);
 
-		if(index < 0 || index > size) {
+		if(index < 0 || index >= size) {
 			throw new IndexOutOfBoundsException("Not a valid index for this LinkedList.");
+		}
+
+		if(element == null) {
+			throw new NullPointerException("Null pointers not accepted.");
 		}
 
 		if(index == 0) {
@@ -180,13 +189,19 @@ public class MyLinkedList<E> extends AbstractList<E> {
 
 		for(int i=1; i<(index+1); i++) {
 			currentElement = currentElement.next;
-			LLNode<E> previousElement = currentElement.prev;
 
 			if(i == index) {
 				currentElement = newElement;
 			}
 		}
 		return newElement.data;
+	}
+
+	public static void main(String[] args) {
+		MyLinkedList<Integer> lst = new MyLinkedList<>();
+		lst.add(0, 1);
+		lst.remove(0);
+		lst.add(0, 1);
 	}
 }
 
