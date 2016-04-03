@@ -1,9 +1,6 @@
 package textgen;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Random;
+import java.util.*;
 
 /** 
  * An implementation of the MTG interface that uses a list of lists.
@@ -19,6 +16,9 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
 	
 	// The random number generator
 	private Random rnGenerator;
+
+	// Testing whether retrain has been run
+	private boolean retrain;
 	
 	public MarkovTextGeneratorLoL(Random generator)
 	{
@@ -33,6 +33,62 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
 	public void train(String sourceText)
 	{
 		// TODO: Implement this method
+
+		// EXCEPTIONS AND ERRORS
+		if(!wordList.isEmpty() && !retrain) {
+			throw new IllegalArgumentException("Please run retrain before continuing.");
+		}
+
+		// STARTING VARIABLES AND STARTER PROCESSING
+		String[] textWords = sourceText.split("[ ]+");
+
+		starter = textWords[0];
+		ListNode starterNode = new ListNode(starter);
+		wordList.add(starterNode);
+
+		// PROCESSING OF ALL WORDS EXCEPT LAST WORD
+		for(int i=1; i<textWords.length; i++) {
+			String prevWord = textWords[i-1];
+			String currWord = textWords[i];
+			boolean containsPrevNode = false;
+			int prevNodeIndex = 0;
+
+			for( int j=0; j<wordList.size(); j++ ) {
+				if( wordList.get(j).getWord().equals(prevWord) ) {
+					containsPrevNode = true;
+					prevNodeIndex = j;
+				}
+			}
+
+			if( containsPrevNode ) {
+				wordList.get(prevNodeIndex).addNextWord(currWord);
+			} else {
+				ListNode prevNode = new ListNode(prevWord);
+				wordList.add(prevNode);
+				wordList.get(wordList.size() - 1).addNextWord(currWord);
+			}
+		}
+
+		// PROCESSING OF LAST WORD
+		String lastWord = textWords[textWords.length - 1];
+		boolean containsLastNode = false;
+		int lastNodeIndex = 0;
+
+		for( int i=0; i<wordList.size(); i++ ) {
+			if( wordList.get(i).getWord().equals(lastWord) ) {
+				containsLastNode = true;
+				lastNodeIndex = i;
+			}
+		}
+
+		if ( containsLastNode ) {
+			wordList.get(lastNodeIndex).addNextWord(starter);
+		} else {
+			ListNode lastNode = new ListNode(lastWord);
+			wordList.add(lastNode);
+			wordList.get(wordList.size() - 1).addNextWord(starter);
+		}
+
 	}
 	
 	/** 
@@ -41,7 +97,43 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
 	@Override
 	public String generateText(int numWords) {
 	    // TODO: Implement this method
-		return null;
+		String output = "";
+		String currWord = starter;
+		int wordsAdded = 1;
+
+		if(wordList.isEmpty()) {
+			return "";
+		}
+
+		if(numWords == 0) {
+			return "";
+		}
+
+		if(wordList.isEmpty()) {
+			output = "";
+			return output;
+		}
+
+		output += currWord;
+
+		while(wordsAdded != numWords) {
+			ListNode currNode = wordList.get(0);
+
+			for(int i=0; i<wordList.size(); i++) {
+				if( wordList.get(i).getWord().equals(currWord) ) {
+					currNode = wordList.get(i);
+
+				}
+			}
+
+			String nextWord = currNode.getRandomNextWord(rnGenerator);
+			output = output + " " + nextWord;
+			currWord = nextWord;
+			wordsAdded++;
+		}
+
+		System.out.println(wordsAdded);
+		return output;
 	}
 	
 	
@@ -62,6 +154,16 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
 	public void retrain(String sourceText)
 	{
 		// TODO: Implement this method.
+		for(int i=0; i<wordList.size(); i++) {
+			wordList.remove(i);
+		}
+
+		starter = "";
+
+		retrain = true;
+
+		train(sourceText);
+
 	}
 	
 	// TODO: Add any private helper methods you need here.
@@ -144,7 +246,12 @@ class ListNode
 		// TODO: Implement this method
 	    // The random number generator should be passed from 
 	    // the MarkovTextGeneratorLoL class
-	    return null;
+
+		int randomNumber = generator.nextInt(nextWords.size());
+
+		String chosenWord = nextWords.get(randomNumber);
+
+	    return chosenWord;
 	}
 
 	public String toString()
