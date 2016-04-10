@@ -1,20 +1,18 @@
 package spelling;
 
-import java.util.List;
-import java.util.Set;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.*;
 
 /** 
  * An trie data structure that implements the Dictionary and the AutoComplete ADT
- * @author You
+ * @author eliyooy
  *
  */
 public class AutoCompleteDictionaryTrie implements  Dictionary, AutoComplete {
 
     private TrieNode root;
-    private int size;
+    private int size = 0;
+	ArrayList<String> dictWords = new ArrayList<>();
+	private HashMap<Character, TrieNode> children;
     
 
     public AutoCompleteDictionaryTrie()
@@ -29,7 +27,39 @@ public class AutoCompleteDictionaryTrie implements  Dictionary, AutoComplete {
 	public boolean addWord(String word)
 	{
 	    //TODO: Implement this method.
-	    return false;
+		char[] processedWord = word.toLowerCase().toCharArray();
+		TrieNode currentNode = root;
+		String wordText = "";
+		boolean wordAdded = false;
+
+		for(int i=0; i<processedWord.length; i++) {
+			if(!currentNode.getValidNextCharacters().contains(processedWord[i])) {
+				wordText += processedWord[i];
+				TrieNode nextNode = currentNode.insert(processedWord[i]);
+
+				currentNode = nextNode;
+				wordAdded = true;
+
+			} else {
+				wordText += processedWord[i];
+				TrieNode nextNode = currentNode.getChild(processedWord[i]);
+
+				if((i+1) == processedWord.length && !dictWords.contains(word.toLowerCase())) {
+					wordAdded = true;
+				}
+
+				currentNode = nextNode;
+
+			}
+		}
+
+		if(wordAdded) {
+			dictWords.add(word.toLowerCase());
+			currentNode.setEndsWord(true);
+			size++;
+		}
+
+	    return wordAdded;
 	}
 	
 	/** 
@@ -39,7 +69,8 @@ public class AutoCompleteDictionaryTrie implements  Dictionary, AutoComplete {
 	public int size()
 	{
 	    //TODO: Implement this method
-	    return 0;
+
+	    return size;
 	}
 	
 	
@@ -48,6 +79,11 @@ public class AutoCompleteDictionaryTrie implements  Dictionary, AutoComplete {
 	public boolean isWord(String s) 
 	{
 	    // TODO: Implement this method
+
+		if(dictWords.contains(s.toLowerCase())) {
+			return true;
+		}
+
 		return false;
 	}
 
@@ -55,8 +91,8 @@ public class AutoCompleteDictionaryTrie implements  Dictionary, AutoComplete {
 	 *  * Returns up to the n "best" predictions, including the word itself,
      * in terms of length
      * If this string is not in the trie, it returns null.
-     * @param text The text to use at the word stem
-     * @param n The maximum number of predictions desired.
+     * @param "text" The text to use at the word stem
+     * @param "n" The maximum number of predictions desired.
      * @return A list containing the up to n best predictions
      */@Override
      public List<String> predictCompletions(String prefix, int numCompletions) 
@@ -75,8 +111,38 @@ public class AutoCompleteDictionaryTrie implements  Dictionary, AutoComplete {
     	 //       If it is a word, add it to the completions list
     	 //       Add all of its child nodes to the back of the queue
     	 // Return the list of completions
+
+		 char[] processedWord = prefix.toLowerCase().toCharArray();
+		 LinkedList<String> completions = new LinkedList<>();
+		 TrieNode currentNode = root;
+
+		 for( char a : processedWord ) {
+			 if(currentNode.getChild(a) == null) {
+				 return completions;
+			 }
+
+			 currentNode = currentNode.getChild(a);
+		 }
+
+		 Queue<TrieNode> q = new LinkedList<>();
+		 q.add(currentNode);
+
+		 while(!q.isEmpty() && (completions.size()) < numCompletions) {
+				TrieNode curr = q.remove();
+
+			 	if(curr != null) {
+					if(curr.endsWord()) {
+						completions.add(curr.getText());
+					}
+
+					Object[] nextChars = curr.getValidNextCharacters().toArray();
+					for( Object a : nextChars ) {
+						q.add(curr.getChild((char) a));
+					}
+				}
+		 }
     	 
-         return null;
+         return completions;
      }
 
  	// For debugging
