@@ -29,19 +29,14 @@ public class AutoCompleteDictionaryTrie implements  Dictionary, AutoComplete {
 	    //TODO: Implement this method.
 		char[] processedWord = word.toLowerCase().toCharArray();
 		TrieNode currentNode = root;
-		String wordText = "";
 		boolean wordAdded = false;
 
 		for(int i=0; i<processedWord.length; i++) {
 			if(!currentNode.getValidNextCharacters().contains(processedWord[i])) {
-				wordText += processedWord[i];
-				TrieNode nextNode = currentNode.insert(processedWord[i]);
-
-				currentNode = nextNode;
+				currentNode = currentNode.insert(processedWord[i]);
 				wordAdded = true;
 
 			} else {
-				wordText += processedWord[i];
 				TrieNode nextNode = currentNode.getChild(processedWord[i]);
 
 				if((i+1) == processedWord.length && !dictWords.contains(word.toLowerCase())) {

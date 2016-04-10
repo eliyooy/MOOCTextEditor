@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69d5d566-678c-4aeb-9123-416400ebcb8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/application/TextProController.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/application/TextProController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/AutoCompleteDictionaryTrie.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/AutoCompleteDictionaryTrie.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/DictionaryBST.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/DictionaryBST.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/DictionaryBSTTester.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/DictionaryBSTTester.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/DictionaryLL.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/DictionaryLL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/DictionaryLLTester.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/spelling/DictionaryLLTester.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MOOCTextEditor/textgen/MarkovTextGeneratorLoL.class" afterPath="$PROJECT_DIR$/out/production/MOOCTextEditor/textgen/MarkovTextGeneratorLoL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrie.java" afterPath="$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrie.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spelling/DictionaryBST.java" afterPath="$PROJECT_DIR$/src/spelling/DictionaryBST.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spelling/DictionaryBSTTester.java" afterPath="$PROJECT_DIR$/src/spelling/DictionaryBSTTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spelling/DictionaryLL.java" afterPath="$PROJECT_DIR$/src/spelling/DictionaryLL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spelling/DictionaryLLTester.java" afterPath="$PROJECT_DIR$/src/spelling/DictionaryLLTester.java" />
     </list>
     <ignored path="MOOCTextEditor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +27,18 @@
       <file leaf-file-name="AutoCompleteDictionaryTrie.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+            <state relative-caret-position="465">
+              <caret line="34" column="82" selection-start-line="34" selection-start-column="82" selection-end-line="34" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DictionaryBST.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spelling/DictionaryBST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -119,7 +117,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="-85" />
+    <option name="y" value="28" />
     <option name="width" value="1280" />
     <option name="height" value="703" />
   </component>
@@ -775,12 +774,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Auto_Complete_Dict_Test - 2016.04.09 at 23h 31m 59s.xml">
-      <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Auto_Complete_Dict_Test - 2016.04.09 at 23h 32m 35s.xml">
-      <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Auto_Complete_Dict_Test - 2016.04.09 at 23h 33m 20s.xml">
       <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
     </history-entry>
@@ -805,6 +798,12 @@
     <history-entry file="Auto_Complete_Dict_Test - 2016.04.10 at 09h 47m 42s.xml">
       <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Auto_Complete_Dict_Test - 2016.04.10 at 10h 28m 17s.xml">
+      <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Auto_Complete_Dict_Test - 2016.04.10 at 10h 28m 53s.xml">
+      <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -816,8 +815,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="703" extended-state="6" />
-    <editor active="false" />
+    <frame x="-85" y="28" width="1280" height="703" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -827,7 +826,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1169,13 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spelling/DictionaryBST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/spelling/DictionaryLL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1216,10 +1208,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/spelling/DictionaryBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+        <state relative-caret-position="465">
+          <caret line="34" column="82" selection-start-line="34" selection-start-column="82" selection-end-line="34" selection-end-column="82" />
           <folding />
         </state>
       </provider>
