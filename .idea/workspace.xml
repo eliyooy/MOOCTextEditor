@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69d5d566-678c-4aeb-9123-416400ebcb8b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrie.java" afterPath="$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spelling/NearbyWords.java" afterPath="$PROJECT_DIR$/src/spelling/NearbyWords.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/spelling/SpellingSuggest.java" afterPath="$PROJECT_DIR$/src/spelling/SpellingSuggest.java" />
     </list>
     <ignored path="MOOCTextEditor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,53 +26,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AutoCompleteDictionaryTrie.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutoCompleteDictionaryTrie.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="34" column="82" selection-start-line="34" selection-start-column="82" selection-end-line="34" selection-end-column="82" />
+            <state relative-caret-position="564">
+              <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DictionaryBST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spelling/DictionaryBST.java">
+      <file leaf-file-name="NearbyWords.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/spelling/NearbyWords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="-63">
+              <caret line="80" column="54" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoCompleteDictionaryTrieTester.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrieTester.java">
+      <file leaf-file-name="NearbyWordsGraderOne.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spelling/NearbyWordsGraderOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spelling/Dictionary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoComplete.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/spelling/AutoComplete.java">
+      <file leaf-file-name="SpellingSuggest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/spelling/SpellingSuggest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,6 +93,8 @@
         <option value="$PROJECT_DIR$/src/spelling/DictionaryBSTTester.java" />
         <option value="$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrieTester.java" />
         <option value="$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrie.java" />
+        <option value="$PROJECT_DIR$/src/spelling/SpellingSuggest.java" />
+        <option value="$PROJECT_DIR$/src/spelling/NearbyWords.java" />
       </list>
     </option>
   </component>
@@ -117,8 +109,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-85" />
-    <option name="y" value="28" />
+    <option name="x" value="329" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="703" />
   </component>
@@ -148,8 +140,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,8 +265,24 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="100" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="102" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="106" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="900" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="100" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="102" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="106" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="900" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
-  <component name="RunManager" selected="JUnit.Auto Complete Dict Test">
+  <component name="RunManager" selected="Application.Nearby Words">
     <configuration default="false" name="BasicDocument" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -532,6 +540,21 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="false" name="Nearby Words" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="spelling.NearbyWords" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="MOOCTextEditor" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="Markov Text Generator" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="textgen.MarkovTextGeneratorLoL" />
@@ -736,20 +759,21 @@
       <patterns />
       <method />
     </configuration>
-    <list size="13">
-      <item index="0" class="java.lang.String" itemvalue="Application.Markov Text Generator" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MyLinkedListGrader" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Dictionary Benchmarking" />
-      <item index="3" class="java.lang.String" itemvalue="Application.BasicDocumentGrader" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MyLinkedList" />
-      <item index="5" class="java.lang.String" itemvalue="Application.MainApp" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Efficient Document" />
-      <item index="7" class="java.lang.String" itemvalue="Application.Document Benchmarking" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.Auto Complete Dict Test" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.DictionaryLL Tester" />
-      <item index="10" class="java.lang.String" itemvalue="JUnit.DictionaryBST Tester" />
-      <item index="11" class="java.lang.String" itemvalue="JUnit.My Linked List Tester" />
-      <item index="12" class="java.lang.String" itemvalue="Application.BasicDocument" />
+    <list size="14">
+      <item index="0" class="java.lang.String" itemvalue="Application.Nearby Words" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Markov Text Generator" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MyLinkedListGrader" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Dictionary Benchmarking" />
+      <item index="4" class="java.lang.String" itemvalue="Application.BasicDocumentGrader" />
+      <item index="5" class="java.lang.String" itemvalue="Application.MyLinkedList" />
+      <item index="6" class="java.lang.String" itemvalue="Application.MainApp" />
+      <item index="7" class="java.lang.String" itemvalue="Application.Efficient Document" />
+      <item index="8" class="java.lang.String" itemvalue="Application.Document Benchmarking" />
+      <item index="9" class="java.lang.String" itemvalue="Application.BasicDocument" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.Auto Complete Dict Test" />
+      <item index="11" class="java.lang.String" itemvalue="JUnit.DictionaryLL Tester" />
+      <item index="12" class="java.lang.String" itemvalue="JUnit.DictionaryBST Tester" />
+      <item index="13" class="java.lang.String" itemvalue="JUnit.My Linked List Tester" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -774,9 +798,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Auto_Complete_Dict_Test - 2016.04.09 at 23h 33m 20s.xml">
-      <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Auto_Complete_Dict_Test - 2016.04.09 at 23h 36m 40s.xml">
       <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
     </history-entry>
@@ -804,6 +825,9 @@
     <history-entry file="Auto_Complete_Dict_Test - 2016.04.10 at 10h 28m 53s.xml">
       <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Auto_Complete_Dict_Test - 2016.04.11 at 12h 08m 49s.xml">
+      <configuration name="Auto Complete Dict Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -815,7 +839,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-85" y="28" width="1280" height="703" extended-state="0" />
+    <frame x="329" y="23" width="1280" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -825,7 +849,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -845,6 +869,14 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -857,27 +889,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/document/BasicDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/document/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="177" column="69" selection-start-line="177" selection-start-column="69" selection-end-line="177" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/document/BasicDocument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1102,13 +1113,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/textgen/MarkovTextGeneratorLoL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="181" column="29" selection-start-line="181" selection-start-column="29" selection-end-line="181" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/textgen/MarkovTextGeneratorGrader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -1164,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,6 +1182,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrieTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,13 +1211,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrieTester.java">
+    <entry file="file://$PROJECT_DIR$/src/spelling/SpellingSuggest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,10 +1227,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/textgen/MarkovTextGeneratorLoL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="181" column="29" selection-start-line="181" selection-start-column="29" selection-end-line="181" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/spelling/AutoCompleteDictionaryTrie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="34" column="82" selection-start-line="34" selection-start-column="82" selection-end-line="34" selection-end-column="82" />
+        <state relative-caret-position="564">
+          <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spelling/NearbyWordsGraderOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/spelling/NearbyWords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="80" column="54" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
           <folding />
         </state>
       </provider>
